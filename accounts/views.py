@@ -1,6 +1,6 @@
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from accounts.models import User
-from accounts.serializers import UserSerializer, CustomTokenObtainPairSerializer
+from accounts.serializers import UserSerializer, MyTokenObtainPairSerializer
 from django.http import Http404
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -70,14 +70,6 @@ class UserDetail(APIView):
 
         user.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-
-
-class CustomTokenObtainPairView(TokenObtainPairView):
-    serializer_class = CustomTokenObtainPairSerializer
-
-
-class CustomTokenRefreshView(TokenRefreshView):
-    serializer_class = CustomTokenObtainPairSerializer
 
 
 class MyObtainTokenPairView(TokenObtainPairView):
