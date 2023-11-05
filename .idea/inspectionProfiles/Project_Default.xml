@@ -1,0 +1,25 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="66" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="project.models.Project.objects" />
+          <option value="project.models.Project.DoesNotExist" />
+          <option value="task.models.Task.*" />
+          <option value="fleet.models.Vehicle.*" />
+          <option value="rental.models.Rental.*" />
+          <option value="rental.models.Reservation.*" />
+          <option value="rental.serializers.ReservationSerializer.*" />
+          <option value="rental.serializers.RentSerializer.*" />
+          <option value="review.models.Review.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
